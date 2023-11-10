@@ -10,21 +10,20 @@ $n!=n×(n−1)×(n−2)×…×1$
 * Utiliza esta función para calcular el factorial de un número que el usuario ingrese por teclado.
 """
 
-# Definimos la función que calcula el factorial de un número entero positivo n.
+# Definimos la función que calcula el factorial de un número entero positivo n
 def factorial(n):
-    # Iniciamos el factorial en 1, ya que el factorial de 0 es 1.
+    # Iniciamos el factorial en 1, ya que el factorial de 0 es 1
     resultado = 1
-    # Utilizamos un bucle for para calcular el producto de todos los enteros positivos hasta n.
+    # Utilizamos un bucle for para calcular el producto de todos los enteros positivos hasta n
     for i in range(1, n + 1):
         resultado *= i
-    # Devolvemos el resultado del cálculo factorial.
+    # Devolvemos el resultado del cálculo factorial
     return resultado
 
-# Aquí pondremos un número de ejemplo para calcular su factorial.
-# En un escenario real, este número sería proporcionado por el usuario.
+# Aquí definimos numero_ejemplo y le ponemos un número de ejemplo para calcular su factorial
 numero_ejemplo = 5
 
-# Calculamos el factorial del número de ejemplo usando la función definida.
+# Calculamos el factorial del número de ejemplo usando la función definida
 resultado_factorial = factorial(numero_ejemplo)
 
 print("El factorial de " + str(numero_ejemplo) + " es " + str(resultado_factorial) + "\n")

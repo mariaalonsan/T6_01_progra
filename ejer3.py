@@ -16,20 +16,21 @@ _n_ es un índice que varía desde 0 hasta infinito.
 * Prueba la función para sumar los primeros 10 términos de una serie con a = 5 y r = 4.
 """
 
-# Definimos la función para calcular la suma de los primeros n términos de una serie geométrica.
+
+# Empezamos definiendo la función para calcular la suma de los primeros n términos de una serie geométrica
 def suma_serie_geometrica(a, r, n):
-    # Iniciamos la suma en 0.
+    # Iniciamos la suma en 0
     suma = 0
-    # Utilizamos un bucle for para calcular cada término de la serie y sumarlo a la suma total.
+    # Utilizamos un bucle for para calcular cada término de la serie y sumarlo a la suma total
     for i in range(n):
-        # Calculamos el término actual elevando la razón r a la potencia del índice actual.
+        # Calculamos el término actual elevando la razón r a la potencia del índice actual
         termino_actual = a * (r ** i)
-        # Sumamos el término actual a la suma total.
+        # Sumamos el término actual a la suma total
         suma += termino_actual
-    # Devolvemos la suma de los términos calculados.
     return suma
 
-# Probamos la función con a = 5, r = 4 y los primeros 10 términos.
+# Probamos la función con a = 5, r = 4 y los primeros 10 términos
 resultado = suma_serie_geometrica(5, 4, 10)
 
+# Printeamos el resultado
 print("El resultado de sumar los primeros 10 términos de una serie con a = 5 y r = 4 es " + str(resultado) + "\n")
