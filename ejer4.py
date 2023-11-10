@@ -10,6 +10,9 @@ $n!=n×(n−1)×(n−2)×…×1$
 * Utiliza esta función para calcular el factorial de un número que el usuario ingrese por teclado.
 """
 
+# Primero le pedinmos un numero ejemplo al usuario y los definimos
+numero_ejemplo = int(input("Introduce un número entero positivo: "))
+
 # Definimos la función que calcula el factorial de un número entero positivo n
 def factorial(n):
     # Iniciamos el factorial en 1, ya que el factorial de 0 es 1
@@ -20,8 +23,6 @@ def factorial(n):
     # Devolvemos el resultado del cálculo factorial
     return resultado
 
-# Aquí definimos numero_ejemplo y le ponemos un número de ejemplo para calcular su factorial
-numero_ejemplo = 5
 
 # Calculamos el factorial del número de ejemplo usando la función definida
 resultado_factorial = factorial(numero_ejemplo)

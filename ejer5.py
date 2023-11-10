@@ -12,6 +12,8 @@
 __NOTA:__ Recuerda que puedes utilizar las funciones _bin()_ y _hex()_  para realizar la conversión de números a binario y hexadecimal.
 """
 
+# Pedimos al usuario que ingrese un número entero positivo
+numero_ejemplo = int(input("Introduce un número entero positivo: "))     
 
 # Definimos la función para convertir un número a su representación binaria y hexadecimal
 def convertir_a_binario_hexadecimal(numero):
@@ -23,9 +25,6 @@ def convertir_a_binario_hexadecimal(numero):
     hexadecimal = hex(numero)[2:]  # Usamos [2:] para quitar el prefijo '0x' del resultado
     # Devolvemos una tupla con las representaciones binaria y hexadecimal
     return (binario, hexadecimal)
-
-# Definimos numero_ejemplo y le ponemos un número de ejemplo para calcular su representación binaria y hexadecimal
-numero_ejemplo = 42  
 
 # Llamamos a la función con el número de ejemplo y almacenamos el resultado
 resultado_conversion = convertir_a_binario_hexadecimal(numero_ejemplo)

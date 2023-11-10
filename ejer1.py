@@ -18,6 +18,12 @@ print(math.pi)
 
 """PRIMERA MANERA: sin usar bibliotecas"""
 
+
+# Primero vamos a pedir al usuario que ingrese un valor para el radio y poder empezar a hacer los calculos
+radio = int(input("Introduce el radio de la esfera: "))
+print("El radio de la esfera es " + str(radio) + "\n")
+
+
 # Definimos la función con el nombre volumen_de_esfera para calcular el volumen de la esfera 
 def volumen_de_esfera(radio):
     # Definimos pi como 3.14159 (como dice el enunciado)
@@ -25,14 +31,12 @@ def volumen_de_esfera(radio):
     # Aplicamos la fórmula (4/3) * pi * radio^3 para calcular el volumen
     return (4.0 / 3.0) * pi * (radio ** 3)
 
-# Vamos a asignar un valor al radio, en este caso es voy a elegir 5 pero podrias ser cualquiera 
-radio = 5 
 
 # Después llamamos a la función con el valor del radio y almacenamos el resultado en 'volumen'
 volumen = volumen_de_esfera(radio)
 
 # Y por último printeamos el resultado
-print("El volumen de una esfera con radio 5 es " + str(volumen) + "\n")
+print("El volumen de una esfera es " + str(volumen) + "\n")
 
 
 
@@ -40,14 +44,16 @@ print("El volumen de una esfera con radio 5 es " + str(volumen) + "\n")
 
 import math  # Importamos la biblioteca math para tener acceso a pi con más decimales y otras funciones matemáticas
 
+# Pedimos al usuario que ingrese un valor para el radio y poder empezar a hacer los calculos
+radio = int(input("Introduce el radio de la esfera: "))
+print("El radio de la esfera es " + str(radio) + "\n")
+
 # Definimos la función
 def volumen_de_esfera(radio):
     # Utilizamos la fórmula dada (4/3) * pi * radio^3 para calcular el volumen
     return (4.0/3.0) * math.pi * (radio ** 3)
 
-radio = 5  
-
 volumen = volumen_de_esfera(radio)
 
-print("El volumen de una esfera con radio 5 es " + str(volumen) + "\n") 
+print("El volumen de una esfera es " + str(volumen) + "\n") 
 # El volumen da mas porque import math usa para pi mas decimales que 3.14159
